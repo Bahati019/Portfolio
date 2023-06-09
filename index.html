@@ -19,7 +19,7 @@
       svg{
         /* background: blue; */
         /* width: 600px; */
-        height: 400px;
+        /* height: 400px; */
         cursor: pointer;
         margin-left: -10%;
       } 
@@ -159,8 +159,8 @@
             <dic class="row">
                 <div class="contact-left">
                     <h1>Contact me</h1>
-                    <p>contact@example.com</p>
-                    <p><i class="fa-solid fa-phone"></i>0716645714</p>
+                    <p>charitybahati19@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0716635714</p>
                     <div class="social-media">
                         <ul>
                             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
@@ -168,7 +168,7 @@
                             <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>  
                         </ul> 
                     </div>
-                    <a href="" class="btn">Download Cv</a>
+                    <a href="https://drive.google.com/file/d/19V4LOGOSYRUc29wAQzuNFsue5jQTnoGV/view?usp=drive_link" class="btn">Download Cv</a>
                 </div>
                 <div class="contact-right">
                     <h2>TALK TO ME</h2>
@@ -178,7 +178,6 @@
                         <textarea name="Message" id="Message"rows="5"></textarea><br><br>
                         <button class="send-btn">SEND</button>
                     </form>
-                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -187,16 +186,5 @@
         <p> &#169 Bahati made with <i class="fa-solid fa-heart"></i></p>
     </div>
 <script src="index.js"></script>  
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxD2iGgqBuAGw_a9HLkax5A-UqD4-YvFlxxmNzbgXY8na4ATCDdXYjBjzrP0FgQ9s0l/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-  </script>
 </body>
 </html>
