@@ -13,6 +13,16 @@
             $('#icon').click(function(){
                 $('ul').toggleClass('show');
             });
+
+            $('a[href^="#"]').click(function(event) {
+                event.preventDefault();
+                var target = $(this).attr("href");
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 800);
+                $('ul').removeClass('show');
+                // $('#Home').toggle();
+            });
         });
     </script>
     <style>
@@ -50,15 +60,10 @@
                 <img src="Images/Snap.jpg">
             </div>
             <div class="bio">
-                <h1>Hi, I'm <span>Bahati</span></h1>
+                <h1>Hi, I'm <span class="animated-test">Bahati</span></h1>
                 <p>
-                   <!-- A passionate programmer having an experience of building web and mobile applictation.
-                   I like what I do. Also like challenges of all kind.
-                   You can reach out to me through all my socials and let's discuss about a project, or
-                   if maybe you want to say Hi. -->
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                   Itaque non sint unde ipsam autem temporibus quas rem rerum? 
-                   At excepturi quae explicabo sit sequi reprehenderit ipsa quibusdam eum autem ullam?
+                 A highly skilled and passionate web designer, app developer, and UI/UX designer. 
+                 With a keen eye for aesthetics and a deep understanding of user experience, I create captivating digital experiences.
                 </p>
             </div> 
            </div>   
@@ -123,8 +128,10 @@
     <div class="Projects" id="Projects">
         <section class="containers">
             <div class="card">
-                <div class="card-image"></div>
-                <h2>Title</h2>
+                <div class="card-image">
+                    <!-- <img src="Images/Weather.jpeg" alt=""> -->
+                </div>
+                <h2>Weather App</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Ipsa deserunt non quibusdam maxime at voluptates ipsam odit aspernatur rerum consectetur,
                     quos tempore repudiandae reprehenderit dolor, 
@@ -133,8 +140,10 @@
                 <a href="">READ MORE</a>
             </div>
             <div class="card">
-                <div class="card-image"></div>
-                <h2>Title</h2>
+                <div class="card-image">
+                    <!-- <img src="Images/Lane.png"> -->
+                </div>
+                <h2>Lane Detection App</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Ipsa deserunt non quibusdam maxime at voluptates ipsam odit aspernatur rerum consectetur,
                     quos tempore repudiandae reprehenderit dolor, 
